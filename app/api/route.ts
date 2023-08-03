@@ -9,13 +9,6 @@ export const POST = async (req: Request, {params}: {params: any}) => {
   const url = new URL(req.url)
 
   const data = Object.entries(url.searchParams)
-
-  const aaa = 
-
-  console.log('====================================');
-  console.log(url.searchParams);
-  console.log('====================================');
-
   return new NextResponse(JSON.stringify({
     message: "user added successfully"
   }), {status: 201,})
@@ -27,4 +20,3 @@ export const POST = async (req: Request, {params}: {params: any}) => {
 
 
 
- 
